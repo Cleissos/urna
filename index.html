@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna de votação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="div1" id="div01">
+            <img id="justica" src="../img/JusticaEleitoral.png" alt="">
+            <div id="interna">
+                <img id="bolsonaro" src="" alt="">
+                <img id="lula" src="" alt="">
+                <img id="ciro" src="" alt="">
+                <img id="padreKelmon" src="" alt="">
+                <img id="fim" src="" alt="">
+                <img id="votoInvalido" src="" alt="">
+                <img id="cleisson" src="" alt=""><br>
+            </div>
+        </div>
+
+
+        <input type="text" id="campo" class="campo1">
+
+        <div class="div2">
+            <img id="poderJudiciario" src="img/poder-judiciario.png" alt="">
+            <p>JUSTIÇA<br>ELEITORAL</p>
+        </div>
+
+        <div class="div3">
+            <table>
+                <tr>
+                    <th><button type="button" onclick="botao1()">1</button></th>
+                    <th><button type="button" onclick="botao2()">2</button></th>
+                    <th><button style="margin-left: -20px;" type="button" onclick="botao3()">3</button></th>
+                </tr>
+                <tr>
+                    <th><button type="button" onclick="botao4()">4</button></th>
+                    <th><button type="button" onclick="botao5()">5</button></th>
+                    <th><button style="margin-left: -20px;" type="button" onclick="botao6()">6</button></th>
+                </tr>
+                <tr>
+                    <th><button type="button" onclick="botao7()">7</button></th>
+                    <th><button type="button" onclick="botao8()">8</button></th>
+                    <th><button style="margin-left: -20px;" type="button" onclick="botao9()">9</button></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><button style="margin-left: -20px;" type="button" onclick="botao0()">0</button></th>
+                </tr>
+                <tr>
+                    <th><button id="branco" type="button" onclick="branco()">Branco</button></th>
+                    <th><button id="corrige" type="button" onclick="corrige()">Corrige</button></th>
+                    <th><button id="confirma" type="button" onclick="confirma()">Confirma</button></th>
+                </tr>
+            </table>
+
+        </div>
+    </main>
+    <audio id="somConfirma">
+        <source src="../audio/confirma.mp3" type="audio/mp3">
+    </audio>
+    <audio id="b1">
+        <source src="audio/bip.wav" type="audio/wav">
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
