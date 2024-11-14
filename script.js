@@ -88,7 +88,7 @@ function corrige() {
         var imagem2 = document.getElementById('justica')
         imagem2.style.display = 'block';
         imagem.style.display = 'none'
-    } else if(texto == '14'){
+    } else if (texto == '14') {
         var imagem = document.getElementById('padreKelmon');
         var imagem2 = document.getElementById('justica')
         imagem2.style.display = 'block';
@@ -135,13 +135,12 @@ function verificaCandidato() {
         var imagem = document.getElementById('ciro');
         imagem.setAttribute('src', 'img/cachorro2.png');
         imagem.style.display = 'block';
-    }else if(texto == '14'){
+    } else if (texto == '14') {
         var imagem = document.getElementById('padreKelmon');
         imagem.setAttribute('src', 'img/gat-presidente.png');
         imagem.style.display = 'block';
     }
     else {
-        // Se o texto não for '17', podemos exibir uma imagem padrão ou mensagem de erro
         var imagem = document.getElementById('votoInvalido');
         var imagem2 = document.getElementById('justica')
         imagem.setAttribute('src', '../img/votoInvalido.png');
@@ -161,15 +160,21 @@ function confirma() {
         img.style.display = 'none';
     });
 
-    var imagem2 =document.getElementById('fim')
-    imagem2.setAttribute('src', '../img/FIM2.png')
-    imagem2.style.display = 'block'
+    var texto = document.getElementById('campo').value
+
+    if (texto != '17' && texto != '14' && texto != '13' && texto != '12') {
+        var imagem3 = document.getElementById('votoInvalido')
+        imagem3.setAttribute('src', '../img/votoInvalido.png')
+        imagem3.style.display = 'block'
+    } else {
+        var imagem2 = document.getElementById('fim')
+        imagem2.setAttribute('src', '../img/FIM2.png')
+        imagem2.style.display = 'block'
+    }
+
 
     //Essa funçaõ dá um delay de 2s quando votar e apertar o botão confirma, ela volta à imagem original
     setTimeout(function () {
-        // Ocultar a imagem atual
-        //var imagem = document.getElementById('justica')
-        //imagem.style.display = 'none';
         imagem2.style.display = 'none'
 
         // Exibir a imagem da justiça
